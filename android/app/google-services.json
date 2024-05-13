@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "216117988895",
-    "project_id": "transaction-3d58b",
-    "storage_bucket": "transaction-3d58b.appspot.com"
+    "project_number": "33787728039",
+    "project_id": "code-catalysts",
+    "storage_bucket": "code-catalysts.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:216117988895:android:628b411daf9909c1e94f2a",
+        "mobilesdk_app_id": "1:33787728039:android:ab6672769c408103b74b82",
         "android_client_info": {
           "package_name": "com.example.transactions_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB37mIk5LdMmkJ4hv5oDXitxau14ri0SRM"
+          "current_key": "AIzaSyAbHRwOPnN2Wq_yrA4BHXoisHLVxqC0X30"
         }
       ],
       "services": {
