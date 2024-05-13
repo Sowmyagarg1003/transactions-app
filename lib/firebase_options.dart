@@ -32,42 +32,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: "AIzaSyBPETbNYEdrrWP96QshX-Ue_Ac4T7M-sOM",
-    appId: "1:216117988895:web:a2d50bc3acda0656e94f2a",
-    messagingSenderId: "853089705470",
-    projectId: "transactions-app-835fc",
-    authDomain: "transaction-3d58b.firebaseapp.com",
-    storageBucket: "transaction-3d58b.appspot.com",
-    measurementId: "G-DB4EES3WFM",
+    apiKey: "AIzaSyAAeJ0boY6dqXcK8ntpTdP5HwNLLnL76oo",
+    authDomain: "code-catalysts.firebaseapp.com",
+    projectId: "code-catalysts",
+    storageBucket: "code-catalysts.appspot.com",
+    messagingSenderId: "33787728039",
+    appId: "1:33787728039:web:7bb22366d02c624eb74b82",
+    measurementId: "G-5WHW1TF34X",
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: "AIzaSyB37mIk5LdMmkJ4hv5oDXitxau14ri0SRM",
-    appId: "1:216117988895:android:628b411daf9909c1e94f2a",
-    messagingSenderId: "216117988895",
-    projectId: "transaction-3d58b",
-    storageBucket: "transaction-3d58b.appspot.com",
+    apiKey: "AIzaSyAbHRwOPnN2Wq_yrA4BHXoisHLVxqC0X30",
+    appId: "1:33787728039:android:ab6672769c408103b74b82",
+    messagingSenderId: "33787728039",
+    projectId: "code-catalysts",
+    storageBucket: "code-catalysts.appspot.com",
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: "AIzaSyCdCC-W5CQGxe--PRuGsgugzhOg1kUFHyo",
-    appId: "1:216117988895:ios:6f0c36e8c2236230e94f2a",
-    messagingSenderId: "216117988895",
-    projectId: "transaction-3d58b",
-    storageBucket: "transaction-3d58b.appspot.com",
+    apiKey: "AIzaSyC9LdhTuykgfyKxoTRhgp6KH3ctXOkHzdk",
+    appId: "1:33787728039:ios:dff666d0bcca6e55b74b82",
+    messagingSenderId: "33787728039",
+    projectId: "code-catalysts",
+    storageBucket: "code-catalysts.appspot.com",
     //iosClientId:
     //'184595400107-5bvpcsqbapnsnb5u6fqrp86kr597hpvu.apps.googleusercontent.com',
     iosBundleId: "com.example.transactionsApp",
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: "AIzaSyB37mIk5LdMmkJ4hv5oDXitxau14ri0SRM",
-    appId: "1:216117988895:ios:6f0c36e8c2236230e94f2a",
-    messagingSenderId: "216117988895",
-    projectId: "transaction-3d58b",
-    storageBucket: "transaction-3d58b.appspot.com",
+    apiKey: "AIzaSyC9LdhTuykgfyKxoTRhgp6KH3ctXOkHzdk",
+    appId: "1:33787728039:ios:dff666d0bcca6e55b74b82",
+    messagingSenderId: "33787728039",
+    projectId: "code-catalysts",
+    storageBucket: "code-catalysts.appspot.com",
     //iosClientId:
-    // '184595400107-5bvpcsqbapnsnb5u6fqrp86kr597hpvu.apps.googleusercontent.com',
+    //'184595400107-5bvpcsqbapnsnb5u6fqrp86kr597hpvu.apps.googleusercontent.com',
     iosBundleId: "com.example.transactionsApp",
   );
 }
