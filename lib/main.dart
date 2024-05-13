@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<UserModel>(create: (_) => (UserModel())),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Banking App',
         theme: ThemeData(
           textSelectionTheme:
