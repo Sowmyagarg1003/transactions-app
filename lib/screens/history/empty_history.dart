@@ -16,7 +16,7 @@ class EmptyHistory extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            "assets/history_images/empty_history.png",
+            "C:\Users\Sowmya\transactions_app\assets\history_images\empty_history.png",
             width: Sizes.size140,
           ),
           Padding(

@@ -32,42 +32,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBx01qHN1CCYtFgCNLm2bkNn6eHsR-OXd0',
-    appId: '1:184595400107:web:b582ee56eda142211b3eee',
-    messagingSenderId: '184595400107',
-    projectId: 'banking-mobile-app',
-    authDomain: 'banking-mobile-app.firebaseapp.com',
-    storageBucket: 'banking-mobile-app.appspot.com',
-    measurementId: 'G-SG4XX3VY62',
+    apiKey: "AIzaSyBPETbNYEdrrWP96QshX-Ue_Ac4T7M-sOM",
+    appId: "1:216117988895:web:a2d50bc3acda0656e94f2a",
+    messagingSenderId: "853089705470",
+    projectId: "transactions-app-835fc",
+    authDomain: "transaction-3d58b.firebaseapp.com",
+    storageBucket: "transaction-3d58b.appspot.com",
+    measurementId: "G-DB4EES3WFM",
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA4XYaYvXVgzRHq8iwVca8Q4S3uOSW0bVg',
-    appId: '1:184595400107:android:cb94c94108dd91001b3eee',
-    messagingSenderId: '184595400107',
-    projectId: 'banking-mobile-app',
-    storageBucket: 'banking-mobile-app.appspot.com',
+    apiKey: "AIzaSyB37mIk5LdMmkJ4hv5oDXitxau14ri0SRM",
+    appId: "1:216117988895:android:628b411daf9909c1e94f2a",
+    messagingSenderId: "216117988895",
+    projectId: "transaction-3d58b",
+    storageBucket: "transaction-3d58b.appspot.com",
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAWz7i6a59W94c1fi4tlGtjWKIq4QrgV8o',
-    appId: '1:184595400107:ios:c7402b5dc1ac9b971b3eee',
-    messagingSenderId: '184595400107',
-    projectId: 'banking-mobile-app',
-    storageBucket: 'banking-mobile-app.appspot.com',
-    iosClientId:
-        '184595400107-5bvpcsqbapnsnb5u6fqrp86kr597hpvu.apps.googleusercontent.com',
-    iosBundleId: 'com.example.bankingApp',
+    apiKey: "AIzaSyCdCC-W5CQGxe--PRuGsgugzhOg1kUFHyo",
+    appId: "1:216117988895:ios:6f0c36e8c2236230e94f2a",
+    messagingSenderId: "216117988895",
+    projectId: "transaction-3d58b",
+    storageBucket: "transaction-3d58b.appspot.com",
+    //iosClientId:
+    //'184595400107-5bvpcsqbapnsnb5u6fqrp86kr597hpvu.apps.googleusercontent.com',
+    iosBundleId: "com.example.transactionsApp",
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAWz7i6a59W94c1fi4tlGtjWKIq4QrgV8o',
-    appId: '1:184595400107:ios:0621ad3d4de990781b3eee',
-    messagingSenderId: '184595400107',
-    projectId: 'banking-mobile-app',
-    storageBucket: 'banking-mobile-app.appspot.com',
-    iosClientId:
-        '184595400107-4lqjm0nkionbbpu77l22rohvr84oml5f.apps.googleusercontent.com',
-    iosBundleId: 'com.example.bankingApp.RunnerTests',
+    apiKey: "AIzaSyB37mIk5LdMmkJ4hv5oDXitxau14ri0SRM",
+    appId: "1:216117988895:ios:6f0c36e8c2236230e94f2a",
+    messagingSenderId: "216117988895",
+    projectId: "transaction-3d58b",
+    storageBucket: "transaction-3d58b.appspot.com",
+    //iosClientId:
+    // '184595400107-5bvpcsqbapnsnb5u6fqrp86kr597hpvu.apps.googleusercontent.com',
+    iosBundleId: "com.example.transactionsApp",
   );
 }

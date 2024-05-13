@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:transactions_app/screens/login_screen.dart';
+import 'package:transactions_app/services/auth_service.dart';
 import 'package:transactions_app/widgets/base_app_bar.dart';
 
 import 'utils/constants.dart';
