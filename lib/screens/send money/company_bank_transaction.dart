@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:qr_flutter/qr_flutter.dart';
 import 'package:transactions_app/screens/send%20money/confirm_screen.dart';
-import 'package:transactions_app/utils/constants.dart';
-import 'package:transactions_app/widgets/app_button.dart';
-import 'package:transactions_app/widgets/base_app_bar.dart';
-
-import '../../services/auth_service.dart';
 
 class CompanyBankMoneyTransfer extends StatefulWidget {
-  const CompanyBankMoneyTransfer({super.key});
+  const CompanyBankMoneyTransfer({Key? key}) : super(key: key);
 
   @override
   State<CompanyBankMoneyTransfer> createState() =>
@@ -20,107 +16,61 @@ class _CompanyBankMoneyTransferState extends State<CompanyBankMoneyTransfer> {
 
   String accountNo = '';
 
-  void assignValues() {
-    setState(() {
-      accountNo = _accountNoController.text;
-      _checkAccount(accountNo);
-    });
-  }
-
-  Future<void> _checkAccount(String accountNo) async {
-    bool isValidAccount = await AuthService().checkAccount(accountNo);
-
-    setState(() {
-      _isValidAccount = isValidAccount;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BaseAppBar(title: Strings.sendFund, canPop: true),
+      appBar: AppBar(
+        title: Text('Send Money'),
+      ), // Adjust as needed
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: Sizes.size16),
-        child: Padding(
-          padding: EdgeInsets.only(top: Sizes.size24),
-          child: Column(
-            children: [
-              Align(
-                alignment: Alignment.topLeft,
-                child: Text(
-                  Strings.account,
-                  style: TextStyle(fontSize: Sizes.size32),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(height: 24.0),
+            Text(
+              'Account Number:',
+              style: TextStyle(fontSize: 20.0),
+            ),
+            SizedBox(height: 16.0),
+            TextField(
+              controller: _accountNoController,
+              onChanged: (value) {
+                setState(() {
+                  accountNo = value;
+                });
+              },
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Enter Account Number',
+              ),
+            ),
+            SizedBox(height: 20), // Add some space
+            Visibility(
+              visible: accountNo.isNotEmpty, // Conditionally show the QR code
+              child: Container(
+                width: 200.0, // Set width for the QR code
+                height: 200.0, // Set height for the QR code
+                child: QrImageView(
+                  data: accountNo, // Generate QR code with the account number
+                  version: QrVersions.auto,
                 ),
               ),
-              Padding(
-                padding:
-                    EdgeInsets.only(top: Sizes.size16, bottom: Sizes.size32),
-                child: Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    Strings.accountTextField,
-                    style: TextStyle(
-                        fontSize: Sizes.size12, color: Colors.black54),
+            ),
+            const Spacer(), // Move the button to the bottom
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => ConfirmTransaction(
+                      accountNo: accountNo,
+                    ),
                   ),
-                ),
-              ),
-              TextField(
-                controller: _accountNoController,
-                onChanged: (value) => assignValues(),
-                textAlign: TextAlign.start,
-                decoration: InputDecoration(
-                  border: const OutlineInputBorder(),
-                  labelText: Strings.accountTextFieldLabel,
-                ),
-              ),
-              const Spacer(),
-              Padding(
-                  padding: EdgeInsets.only(bottom: Sizes.size40),
-                  child: AppButton(
-                    title: Strings.next,
-                    isValid: true,
-                    onTap: () {
-                      _isValidAccount
-                          ? Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      ConfirmTransaction(accountNo: accountNo)))
-                          : showModalBottomSheet(
-                              context: context,
-                              builder: (context) {
-                                return SizedBox(
-                                  height: Sizes.size255,
-                                  child: Center(
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Icon(
-                                              Icons.warning,
-                                              color: Colors.amber,
-                                              size: Sizes.size40,
-                                            ),
-                                            Text(
-                                              'Invalid Account!',
-                                              style: TextStyle(
-                                                  fontSize: Sizes.size24),
-                                            )
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                );
-                              },
-                            );
-                    },
-                  ))
-            ],
-          ),
+                );
+              },
+              child: Text('Next'),
+            ),
+          ],
         ),
       ),
     );
