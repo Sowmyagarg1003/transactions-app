@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCdCC-W5CQGxe--PRuGsgugzhOg1kUFHyo</string>
+	<string>AIzaSyC9LdhTuykgfyKxoTRhgp6KH3ctXOkHzdk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>216117988895</string>
+	<string>33787728039</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.transactionsApp</string>
 	<key>PROJECT_ID</key>
-	<string>transaction-3d58b</string>
+	<string>code-catalysts</string>
 	<key>STORAGE_BUCKET</key>
-	<string>transaction-3d58b.appspot.com</string>
+	<string>code-catalysts.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:216117988895:ios:fc0b6ad15cc313b9e94f2a</string>
+	<string>1:33787728039:ios:dff666d0bcca6e55b74b82</string>
 </dict>
 </plist>
